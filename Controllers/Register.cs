@@ -12,6 +12,7 @@ namespace School_Election_System.Controllers
 {
     public partial class Register : UserControl
     {
+        private VoterService service = new VoterService();
         public Register()
         {
             InitializeComponent();
@@ -22,5 +23,6 @@ namespace School_Election_System.Controllers
             LandingPage login = (LandingPage)this.FindForm();
             login.ShowPage("login");
         }
+        public void Save
     }
 }
