@@ -37,19 +37,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.voters_button = new FontAwesome.Sharp.IconButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.candidates_button = new FontAwesome.Sharp.IconButton();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.election_button = new FontAwesome.Sharp.IconButton();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.dashboard_button = new FontAwesome.Sharp.IconButton();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.logout_button = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -185,29 +185,30 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Transparent;
-            this.panel9.Controls.Add(this.iconButton4);
+            this.panel9.Controls.Add(this.voters_button);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(8, 391);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(328, 71);
             this.panel9.TabIndex = 6;
             // 
-            // iconButton4
+            // voters_button
             // 
-            this.iconButton4.BackColor = System.Drawing.Color.White;
-            this.iconButton4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Users;
-            this.iconButton4.IconColor = System.Drawing.Color.Black;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(0, 0);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(328, 71);
-            this.iconButton4.TabIndex = 8;
-            this.iconButton4.Text = "Voters";
-            this.iconButton4.UseVisualStyleBackColor = false;
+            this.voters_button.BackColor = System.Drawing.Color.White;
+            this.voters_button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.voters_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.voters_button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.voters_button.IconChar = FontAwesome.Sharp.IconChar.Users;
+            this.voters_button.IconColor = System.Drawing.Color.Black;
+            this.voters_button.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.voters_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.voters_button.Location = new System.Drawing.Point(0, 0);
+            this.voters_button.Name = "voters_button";
+            this.voters_button.Size = new System.Drawing.Size(328, 71);
+            this.voters_button.TabIndex = 8;
+            this.voters_button.Text = "Voters";
+            this.voters_button.UseVisualStyleBackColor = false;
+            this.voters_button.Click += new System.EventHandler(this.voters_button_Click);
             // 
             // panel4
             // 
@@ -233,56 +234,58 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Transparent;
-            this.panel8.Controls.Add(this.iconButton3);
+            this.panel8.Controls.Add(this.candidates_button);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(8, 308);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(328, 77);
             this.panel8.TabIndex = 4;
             // 
-            // iconButton3
+            // candidates_button
             // 
-            this.iconButton3.BackColor = System.Drawing.Color.White;
-            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.UserCheck;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(0, 0);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(328, 77);
-            this.iconButton3.TabIndex = 8;
-            this.iconButton3.Text = "Candidates";
-            this.iconButton3.UseVisualStyleBackColor = false;
+            this.candidates_button.BackColor = System.Drawing.Color.White;
+            this.candidates_button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.candidates_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.candidates_button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.candidates_button.IconChar = FontAwesome.Sharp.IconChar.UserCheck;
+            this.candidates_button.IconColor = System.Drawing.Color.Black;
+            this.candidates_button.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.candidates_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.candidates_button.Location = new System.Drawing.Point(0, 0);
+            this.candidates_button.Name = "candidates_button";
+            this.candidates_button.Size = new System.Drawing.Size(328, 77);
+            this.candidates_button.TabIndex = 8;
+            this.candidates_button.Text = "Candidates";
+            this.candidates_button.UseVisualStyleBackColor = false;
+            this.candidates_button.Click += new System.EventHandler(this.candidates_button_Click);
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
-            this.panel7.Controls.Add(this.iconButton1);
+            this.panel7.Controls.Add(this.election_button);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(8, 226);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(328, 76);
             this.panel7.TabIndex = 3;
             // 
-            // iconButton1
+            // election_button
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.White;
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.VoteYea;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 0);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(328, 76);
-            this.iconButton1.TabIndex = 8;
-            this.iconButton1.Text = "Election";
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.election_button.BackColor = System.Drawing.Color.White;
+            this.election_button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.election_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.election_button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.election_button.IconChar = FontAwesome.Sharp.IconChar.VoteYea;
+            this.election_button.IconColor = System.Drawing.Color.Black;
+            this.election_button.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.election_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.election_button.Location = new System.Drawing.Point(0, 0);
+            this.election_button.Name = "election_button";
+            this.election_button.Size = new System.Drawing.Size(328, 76);
+            this.election_button.TabIndex = 8;
+            this.election_button.Text = "Election";
+            this.election_button.UseVisualStyleBackColor = false;
+            this.election_button.Click += new System.EventHandler(this.election_button_Click);
             // 
             // panel6
             // 
@@ -308,35 +311,36 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.iconButton2);
+            this.panel5.Controls.Add(this.dashboard_button);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(8, 81);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(328, 73);
             this.panel5.TabIndex = 1;
             // 
-            // iconButton2
+            // dashboard_button
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.White;
-            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.TachometerAltFast;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(0, 0);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(328, 73);
-            this.iconButton2.TabIndex = 0;
-            this.iconButton2.Text = "Dashboard";
-            this.iconButton2.UseVisualStyleBackColor = false;
+            this.dashboard_button.BackColor = System.Drawing.Color.White;
+            this.dashboard_button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dashboard_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.dashboard_button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard_button.IconChar = FontAwesome.Sharp.IconChar.TachometerAltFast;
+            this.dashboard_button.IconColor = System.Drawing.Color.Black;
+            this.dashboard_button.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.dashboard_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dashboard_button.Location = new System.Drawing.Point(0, 0);
+            this.dashboard_button.Name = "dashboard_button";
+            this.dashboard_button.Size = new System.Drawing.Size(328, 73);
+            this.dashboard_button.TabIndex = 0;
+            this.dashboard_button.Text = "Dashboard";
+            this.dashboard_button.UseVisualStyleBackColor = false;
+            this.dashboard_button.Click += new System.EventHandler(this.dashboard_button_Click);
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.iconButton5, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.logout_button, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 598);
@@ -348,22 +352,23 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(344, 148);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
-            // iconButton5
+            // logout_button
             // 
-            this.iconButton5.BackColor = System.Drawing.Color.White;
-            this.iconButton5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.SignOut;
-            this.iconButton5.IconColor = System.Drawing.Color.Black;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(8, 68);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(328, 72);
-            this.iconButton5.TabIndex = 7;
-            this.iconButton5.Text = "Logout";
-            this.iconButton5.UseVisualStyleBackColor = false;
+            this.logout_button.BackColor = System.Drawing.Color.White;
+            this.logout_button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.logout_button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout_button.IconChar = FontAwesome.Sharp.IconChar.SignOut;
+            this.logout_button.IconColor = System.Drawing.Color.Black;
+            this.logout_button.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.logout_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logout_button.Location = new System.Drawing.Point(8, 68);
+            this.logout_button.Name = "logout_button";
+            this.logout_button.Size = new System.Drawing.Size(328, 72);
+            this.logout_button.TabIndex = 7;
+            this.logout_button.Text = "Logout";
+            this.logout_button.UseVisualStyleBackColor = false;
+            this.logout_button.Click += new System.EventHandler(this.logout_button_Click);
             // 
             // panel3
             // 
@@ -443,15 +448,15 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel5;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton dashboard_button;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton logout_button;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton voters_button;
+        private FontAwesome.Sharp.IconButton candidates_button;
+        private FontAwesome.Sharp.IconButton election_button;
         private System.Windows.Forms.Panel panel10;
     }
 }
