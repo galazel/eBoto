@@ -30,8 +30,8 @@
         {
             this.login_bttn = new System.Windows.Forms.Button();
             this.no_acc_label = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.password_textBox = new System.Windows.Forms.TextBox();
+            this.id_textBox = new System.Windows.Forms.TextBox();
             this.pass_label = new System.Windows.Forms.Label();
             this.voters_id_label = new System.Windows.Forms.Label();
             this.welcome_label = new System.Windows.Forms.Label();
@@ -47,6 +47,7 @@
             this.login_bttn.TabIndex = 13;
             this.login_bttn.Text = "LOGIN";
             this.login_bttn.UseVisualStyleBackColor = false;
+            this.login_bttn.Click += new System.EventHandler(this.login_bttn_Click);
             // 
             // no_acc_label
             // 
@@ -60,25 +61,25 @@
             this.no_acc_label.Text = "Don\'t have an account yet? Click here";
             this.no_acc_label.Click += new System.EventHandler(this.no_acc_label_Click);
             // 
-            // textBox2
+            // password_textBox
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(57, 403);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(431, 59);
-            this.textBox2.TabIndex = 11;
+            this.password_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
+            this.password_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.password_textBox.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password_textBox.Location = new System.Drawing.Point(57, 403);
+            this.password_textBox.Name = "password_textBox";
+            this.password_textBox.Size = new System.Drawing.Size(431, 59);
+            this.password_textBox.TabIndex = 11;
             // 
-            // textBox1
+            // id_textBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(57, 283);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(431, 59);
-            this.textBox1.TabIndex = 10;
+            this.id_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
+            this.id_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.id_textBox.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_textBox.Location = new System.Drawing.Point(57, 283);
+            this.id_textBox.Name = "id_textBox";
+            this.id_textBox.Size = new System.Drawing.Size(431, 59);
+            this.id_textBox.TabIndex = 10;
             // 
             // pass_label
             // 
@@ -120,8 +121,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(79)))), ((int)(((byte)(134)))));
             this.Controls.Add(this.login_bttn);
             this.Controls.Add(this.no_acc_label);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.password_textBox);
+            this.Controls.Add(this.id_textBox);
             this.Controls.Add(this.pass_label);
             this.Controls.Add(this.voters_id_label);
             this.Controls.Add(this.welcome_label);
@@ -136,8 +137,8 @@
 
         private System.Windows.Forms.Button login_bttn;
         private System.Windows.Forms.Label no_acc_label;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox password_textBox;
+        private System.Windows.Forms.TextBox id_textBox;
         private System.Windows.Forms.Label pass_label;
         private System.Windows.Forms.Label voters_id_label;
         private System.Windows.Forms.Label welcome_label;

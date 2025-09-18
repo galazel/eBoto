@@ -1,4 +1,5 @@
-﻿using System;
+﻿using School_Election_System.Controllers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace School_Election_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LandingPage());
+            Application.Run(new Admin());
         }
     }
 }
